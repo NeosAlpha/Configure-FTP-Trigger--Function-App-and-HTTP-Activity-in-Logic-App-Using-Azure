@@ -33,12 +33,12 @@ Functionality we are including in this Process:
 HTTP Trigger Function App auto configure with Azure Blob storage.File name of CSV file stored into blob storage read from Function App Url Query string or Header values.
 Read data from CSV file and Transform data into JSON format.
 Code will be like:
-       [FunctionName("CSVtoJSON")]
+      
+        [FunctionName("CSVtoJSON")]
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route =null)] HttpRequest req
         , [Blob("hotfile/{query.filename}", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream myBlob, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
-            
             string name = req.Query["name"];
             var json = Convert(myBlob);
             return (ActionResult)new OkObjectResult(json);
