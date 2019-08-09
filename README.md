@@ -6,7 +6,7 @@ In this demo we will logic App which automatically trigger when any CSV file cre
 and configure Rest API for all data.
 
 # Soltion Architecture Design
-![managedIdentity.png](images/managedIdentity.png)
+![SolutionArchitecture.png](Image/SolutionArchitecture.png)
 
 
 # Set up
