@@ -1,4 +1,4 @@
-# Configure Auto Event when csv file is created or modified on FTP Server, Parse data into JSON and Configure with RestAPI using Logic App.
+# Configure Auto Event when csv file is created or modified on FTP Server, Parse data into JSON and Configure with Rest API using Logic App.
 **Produced by NeosAlpha Technologies**
 
 # Introduction
