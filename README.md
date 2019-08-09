@@ -17,7 +17,8 @@ Read data from CSV file and Transform data into JSON format.
 In the Logic App interface, go to the Logic App designer and add a recurrence trigger.
 
 
-Functionality we are including in this Process
+Functionality we are including in this Process:
+
 •	Auto event occur when new file is created or modified on FTP server.
 •	Copy file from FTP server to Azure Blob Storage
 •	Transform CSV file into JSON format using Azure Function App HTTP Trigger.
