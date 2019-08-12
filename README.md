@@ -1,4 +1,4 @@
-# Configure Auto Event when csv file is created or modified on FTP Server, Parse data into JSON using Function App and Configure with Rest API using Logic App.
+# Integration Scenario: Configure FTP Trigger, Function App and HTTP(Third Party Rest API) Activity in Logic App Using Azure.
 **Produced by NeosAlpha Technologies**
 
 # Introduction
