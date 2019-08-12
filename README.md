@@ -68,7 +68,7 @@ We are configuring Function App for transform CSV data into JSON format. Here we
 ![FunctionApp.png](Image/FunctionApp.png)
 
 We are using if condition in Logic App for define next step. If File name contain del its mean condition is True then Steps defile in True condition will execute other wise steps defined in false block will execute.
-![DefineFlow On basis of File Name.png](Image/DefineFlow On basis of File Name.png)
+![DefineFlowOnbasisofFileName.png](Image/DefineFlowOnbasisofFileName.png)
 
 In Logic App we are using HTTP activity for configuring Third Party API. Here we are using Third Party API URL with Authorisation Key and Required inputs in Body in JSON Format.
 ![CallThirdPartyAPI.png](Image/CallThirdPartyAPI.png)
