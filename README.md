@@ -9,8 +9,8 @@ For configure Third Party REST API we are using HTTP activity in logic App for f
 ![SolutionArchitecture.png](Image/SolutionArchitecture.png)
 
 # Set up
-n the Logic App interface, go to the Logic App designer and add a FTP activity.
-Gte file from FTP server to azure blob storage.Now, Create a HTTP Trigger- Function App in visual studio. In this Function App we are reading CSV file data, which stored in Azure blob storage and convert that data into JSON format and publish this code to Azue cloud services from VS. 
+In the Logic App interface, go to the Logic App designer and add a FTP activity.
+Get file from FTP server to azure blob storage.Now, Create a HTTP Trigger- Function App in visual studio. In this Function App we are reading CSV file data, which stored in Azure blob storage and convert that data into JSON format and publish this code to Azue cloud services from VS. 
 Functionality we are including in this Process:
 
 •	Auto event occur when new file is created or modified on FTP server.
