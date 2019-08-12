@@ -30,9 +30,17 @@ Functionality we are including in this Process:
 
 # Function App
 
-HTTP Trigger Function App auto configure with Azure Blob storage.File name of CSV file stored into blob storage read from Function App Url Query string or Header values.
-Read data from CSV file and Transform data into JSON format.
-Code will be like:
+Go to the Logic App designer and add a FTP Activity, It will auto trigger when new file added or modified on configured FTP Server.Use Create blob Activity for Create file into Blob storage container from FTP server.
+![FTPServerAccess.png](Image/FTPServerAccess.png)
+
+We are configuring Function App for transform CSV data into JSON format. Here we are passing filename in dunction query input block.
+![FunctionApp.png](Image/FunctionApp.png)
+
+We are using if condition in Logic App for define next step. If File name contain del its mean condition is True then Steps defile in True condition will execute other wise steps defined in false block will execute.
+![DefineFlow On basis of File Name.png](Image/DefineFlow On basis of File Name.png)
+
+In Logic App we are using HTTP activity for configuring Third Party API. Here we are using Third Party API URL with Authorisation Key and Required inputs in Body in JSON Format.
+![CallThirdPartyAPI.png](Image/CallThirdPartyAPI.png)
       
         [FunctionName("CSVtoJSON")]
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route =null)] HttpRequest req
