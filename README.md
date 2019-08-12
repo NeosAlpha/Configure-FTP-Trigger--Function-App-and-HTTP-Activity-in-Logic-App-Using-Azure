@@ -2,7 +2,7 @@
 **Produced by NeosAlpha Technologies**
 
 # Introduction
-In this demo we will configure logic App which automatically trigger when any CSV file create or modified on FTP server. Now we copy that file from FTP server to Azure blob storage. We are using Function App for Trasform csv file data into JSON format.
+In this demo we are configuring logic App which automatically trigger when any CSV file create or modified on FTP server. Now we copy that file from FTP server to Azure blob storage. We are using Function App for Trasform csv file data into JSON format.
 For configure Third Party REST API we are using HTTP activity in logic App for further Process.
 
 # Soltion Architecture Design
